@@ -1,0 +1,48 @@
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+
+    // ── Helpers ──────────────────────────────────────────────────────
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return isSignedIn() && request.auth.token.role == 'admin';
+    }
+
+    function isValidImage() {
+      return request.resource.contentType.matches('image/.*');
+    }
+
+    function isUnderMB(mb) {
+      return request.resource.size <= mb * 1024 * 1024;
+    }
+
+    // ── App assets ────────────────────────────────────────────────────
+    // logos: apps/{appId}/logo.*
+    match /apps/{appId}/logo.{ext} {
+      allow read: if true;
+      allow write: if isSignedIn() && isValidImage() && isUnderMB(2);
+      allow delete: if isAdmin();
+    }
+
+    // screenshots: apps/{appId}/screenshots/{index}.*
+    match /apps/{appId}/screenshots/{filename} {
+      allow read: if true;
+      allow write: if isSignedIn() && isValidImage() && isUnderMB(8);
+      allow delete: if isAdmin();
+    }
+
+    // ── User avatars ─────────────────────────────────────────────────
+    match /users/{userId}/avatar.{ext} {
+      allow read: if true;
+      allow write: if request.auth != null
+        && request.auth.uid == userId
+        && isValidImage()
+        && isUnderMB(2);
+      allow delete: if request.auth != null && request.auth.uid == userId;
+    }
+  }
+}
