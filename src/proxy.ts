@@ -2,12 +2,21 @@ import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 import { SESSION_COOKIE, verifySessionToken } from '@/lib/session'
 
-const PROTECTED_ROUTES = ['/dashboard', '/submit', '/favorites', '/settings']
+const PROTECTED_ROUTES = ['/dashboard', '/submit']
 const ADMIN_ROUTES = ['/admin']
 const AUTH_ROUTES = ['/login', '/signup']
+const SHORTHAND_REDIRECTS: Record<string, string> = {
+  '/favorites': '/dashboard/favorites',
+  '/settings': '/dashboard/settings',
+}
 
 export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl
+
+  if (SHORTHAND_REDIRECTS[pathname]) {
+    return NextResponse.redirect(new URL(SHORTHAND_REDIRECTS[pathname], request.url))
+  }
+
   const token = request.cookies.get(SESSION_COOKIE)?.value
 
   const isProtected = PROTECTED_ROUTES.some((r) => pathname.startsWith(r))

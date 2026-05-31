@@ -155,10 +155,10 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
                 <MobileNavItem href="/dashboard" icon={<LayoutDashboard className="h-4 w-4" />} onClick={onClose}>
                   Dashboard
                 </MobileNavItem>
-                <MobileNavItem href="/favorites" icon={<Heart className="h-4 w-4" />} onClick={onClose}>
+                <MobileNavItem href="/dashboard/favorites" icon={<Heart className="h-4 w-4" />} onClick={onClose}>
                   Favorites
                 </MobileNavItem>
-                <MobileNavItem href="/settings" icon={<Settings className="h-4 w-4" />} onClick={onClose}>
+                <MobileNavItem href="/dashboard/settings" icon={<Settings className="h-4 w-4" />} onClick={onClose}>
                   Settings
                 </MobileNavItem>
                 {user.role === 'admin' && (

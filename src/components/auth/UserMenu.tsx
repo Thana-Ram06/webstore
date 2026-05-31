@@ -97,10 +97,10 @@ export function UserMenu() {
             <MenuItem href="/dashboard" icon={<LayoutDashboard className="h-3.5 w-3.5" />} onClick={() => setOpen(false)}>
               Dashboard
             </MenuItem>
-            <MenuItem href="/favorites" icon={<Heart className="h-3.5 w-3.5" />} onClick={() => setOpen(false)}>
+            <MenuItem href="/dashboard/favorites" icon={<Heart className="h-3.5 w-3.5" />} onClick={() => setOpen(false)}>
               Favorites
             </MenuItem>
-            <MenuItem href="/settings" icon={<Settings className="h-3.5 w-3.5" />} onClick={() => setOpen(false)}>
+            <MenuItem href="/dashboard/settings" icon={<Settings className="h-3.5 w-3.5" />} onClick={() => setOpen(false)}>
               Settings
             </MenuItem>
 
