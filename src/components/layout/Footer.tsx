@@ -1,4 +1,5 @@
-﻿import Link from 'next/link'
+﻿import type React from 'react'
+import Link from 'next/link'
 import { Container } from '@/components/layout/Container'
 import { ThemeToggle } from '@/components/ui/ThemeToggle'
 
@@ -47,10 +48,18 @@ const COLUMNS = [
 /* ─────────────────────────────────────────
    Social icons
    ───────────────────────────────────────── */
-const SOCIAL = [
+const SOCIAL: Array<{
+  label: string
+  href: string
+  target?: string
+  rel?: string
+  icon: React.ReactNode
+}> = [
   {
     label: 'X (Twitter)',
-    href: '#',
+    href: 'https://x.com/anoinv',
+    target: '_blank',
+    rel: 'noopener noreferrer',
     icon: (
       <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden>
         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.259 5.63L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z" />
@@ -75,7 +84,7 @@ const SOCIAL = [
       </svg>
     ),
   },
-] as const
+]
 
 /* ─────────────────────────────────────────
    Component
@@ -108,10 +117,12 @@ export function Footer() {
 
               {/* Social */}
               <div className="mt-5 flex items-center gap-2">
-                {SOCIAL.map(({ label, href, icon }) => (
+                {SOCIAL.map(({ label, href, target, rel, icon }) => (
                   <a
                     key={label}
                     href={href}
+                    target={target}
+                    rel={rel}
                     aria-label={label}
                     className="flex h-8 w-8 items-center justify-center rounded-lg border border-border text-muted-foreground transition-colors hover:border-muted-foreground/30 hover:text-foreground"
                   >
