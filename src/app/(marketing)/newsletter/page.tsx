@@ -1,10 +1,10 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { Mail } from 'lucide-react'
 import { Container } from '@/components/layout/Container'
 
 export const metadata: Metadata = {
-  title: 'Newsletter — WebsTore',
-  description: 'Subscribe to the WebsTore newsletter for curated app picks and platform updates.',
+  title: 'Newsletter — AppVault',
+  description: 'Subscribe to the AppVault newsletter for curated app picks and platform updates.',
 }
 
 export default function NewsletterPage() {

@@ -1,4 +1,4 @@
-import { CheckCircle2 } from 'lucide-react'
+﻿import { CheckCircle2 } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 
 export function Step5Success() {
@@ -18,7 +18,7 @@ export function Step5Success() {
         <ul className="space-y-1 text-left list-disc list-inside">
           <li>Our team reviews your submission</li>
           <li>We verify the app meets quality standards</li>
-          <li>Approved apps go live on WebsTore</li>
+          <li>Approved apps go live on AppVault</li>
         </ul>
       </div>
 

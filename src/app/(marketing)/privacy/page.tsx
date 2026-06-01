@@ -1,9 +1,9 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { Container } from '@/components/layout/Container'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
-  description: 'Privacy Policy for WebsTore.',
+  description: 'Privacy Policy for AppVault.',
   robots: { index: false },
 }
 
@@ -27,7 +27,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-base font-semibold text-foreground mb-2">2. How We Use Your Information</h2>
             <p>
-              We use your information to operate the WebsTore platform — to display your submissions, manage your
+              We use your information to operate the AppVault platform — to display your submissions, manage your
               account, and moderate content. We do not sell your personal information to third parties.
             </p>
           </section>
@@ -52,7 +52,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-base font-semibold text-foreground mb-2">4. Firebase and Data Storage</h2>
             <p>
-              WebsTore uses Google Firebase to store data. Your data is stored in Firebase Firestore and is subject
+              AppVault uses Google Firebase to store data. Your data is stored in Firebase Firestore and is subject
               to Google&apos;s data processing terms. Data is stored in the United States.
             </p>
           </section>
@@ -60,7 +60,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-base font-semibold text-foreground mb-2">5. Cookies</h2>
             <p>
-              We use a session cookie (<code>__webstorehq_session</code>) to keep you signed in. This cookie is
+              We use a session cookie (<code>__appvault_session</code>) to keep you signed in. This cookie is
               essential for the service to function and does not track you across other websites.
             </p>
           </section>
@@ -94,8 +94,8 @@ export default function PrivacyPage() {
             <h2 className="text-base font-semibold text-foreground mb-2">9. Contact</h2>
             <p>
               For privacy-related questions or requests, contact us at{' '}
-              <a href="mailto:hello@webstorehq.com" className="text-accent hover:underline">
-                hello@webstorehq.com
+              <a href="mailto:hello@appvault.com" className="text-accent hover:underline">
+                hello@appvault.com
               </a>
               .
             </p>

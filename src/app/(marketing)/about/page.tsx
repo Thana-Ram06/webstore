@@ -1,11 +1,11 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight, Sparkles } from 'lucide-react'
 import { Container } from '@/components/layout/Container'
 
 export const metadata: Metadata = {
-  title: 'About WebsTore',
-  description: 'Learn about WebsTore — the home of modern web apps, where developers and makers discover the best tools.',
+  title: 'About AppVault',
+  description: 'Learn about AppVault — the home of modern web apps, where developers and makers discover the best tools.',
 }
 
 export default function AboutPage() {
@@ -13,7 +13,7 @@ export default function AboutPage() {
     <Container className="py-16">
       <div className="mx-auto max-w-2xl">
         <h1 className="mb-4 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-          About WebsTore
+          About AppVault
         </h1>
         <p className="mb-10 text-lg leading-relaxed text-muted-foreground">
           The Home of Modern Web Apps — a curated directory built for developers and makers who are always searching for their next favorite tool.
@@ -23,7 +23,7 @@ export default function AboutPage() {
           <section>
             <h2 className="mb-3 text-lg font-semibold text-foreground">Our Mission</h2>
             <p>
-              The web is full of incredible applications — but finding the right one takes time. WebsTore exists to solve that problem. We curate, organize, and surface the best web apps across AI, development, design, productivity, and beyond, so you can spend less time searching and more time building.
+              The web is full of incredible applications — but finding the right one takes time. AppVault exists to solve that problem. We curate, organize, and surface the best web apps across AI, development, design, productivity, and beyond, so you can spend less time searching and more time building.
             </p>
           </section>
 
@@ -48,7 +48,7 @@ export default function AboutPage() {
           <section>
             <h2 className="mb-3 text-lg font-semibold text-foreground">Who We Are</h2>
             <p>
-              WebsTore was built by a small team of developers who were frustrated with scattered, outdated app directories. We believe great web apps deserve great discoverability — and that the community is the best judge of what's worth using.
+              AppVault was built by a small team of developers who were frustrated with scattered, outdated app directories. We believe great web apps deserve great discoverability — and that the community is the best judge of what&apos;s worth using.
             </p>
           </section>
 
@@ -70,8 +70,8 @@ export default function AboutPage() {
             <h2 className="mb-3 text-lg font-semibold text-foreground">Contact</h2>
             <p>
               Questions, partnership inquiries, or feedback? Reach us at{' '}
-              <a href="mailto:hello@webstorehq.com" className="text-accent hover:underline">
-                hello@webstorehq.com
+              <a href="mailto:hello@appvault.com" className="text-accent hover:underline">
+                hello@appvault.com
               </a>
               .
             </p>

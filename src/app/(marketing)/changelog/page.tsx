@@ -1,9 +1,9 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { Container } from '@/components/layout/Container'
 
 export const metadata: Metadata = {
-  title: 'Changelog — WebsTore',
-  description: 'See what\'s new in WebsTore — release notes and product updates.',
+  title: 'Changelog — AppVault',
+  description: 'See what\'s new in AppVault — release notes and product updates.',
 }
 
 const RELEASES = [
@@ -12,7 +12,7 @@ const RELEASES = [
     date: 'May 2026',
     label: 'Launch',
     highlights: [
-      'Public launch of WebsTore',
+      'Public launch of AppVault',
       'Browse and search 500+ curated web apps',
       'Google Sign-In for accounts',
       '5-step app submission wizard',

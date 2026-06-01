@@ -1,9 +1,9 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { Container } from '@/components/layout/Container'
 
 export const metadata: Metadata = {
   title: 'Terms of Service',
-  description: 'Terms of Service for WebsTore.',
+  description: 'Terms of Service for AppVault.',
   robots: { index: false },
 }
 
@@ -18,7 +18,7 @@ export default function TermsPage() {
           <section>
             <h2 className="text-base font-semibold text-foreground mb-2">1. Acceptance of Terms</h2>
             <p>
-              By accessing or using WebsTore, you agree to be bound by these Terms of Service. If you do not agree
+              By accessing or using AppVault, you agree to be bound by these Terms of Service. If you do not agree
               to these terms, please do not use the service.
             </p>
           </section>
@@ -26,7 +26,7 @@ export default function TermsPage() {
           <section>
             <h2 className="text-base font-semibold text-foreground mb-2">2. Use of the Service</h2>
             <p>
-              WebsTore is an app discovery platform. You may browse, submit, and review web applications. You agree
+              AppVault is an app discovery platform. You may browse, submit, and review web applications. You agree
               not to submit spam, malicious links, or misleading content. We reserve the right to remove any
               submission at our discretion.
             </p>
@@ -45,7 +45,7 @@ export default function TermsPage() {
             <h2 className="text-base font-semibold text-foreground mb-2">4. Submitted Content</h2>
             <p>
               By submitting an application, you represent that you have the right to list the app and that the
-              information provided is accurate. WebsTore reserves the right to review, approve, or reject any
+              information provided is accurate. AppVault reserves the right to review, approve, or reject any
               submission.
             </p>
           </section>
@@ -53,7 +53,7 @@ export default function TermsPage() {
           <section>
             <h2 className="text-base font-semibold text-foreground mb-2">5. Intellectual Property</h2>
             <p>
-              The WebsTore platform, logo, and original content are the intellectual property of WebsTore. App
+              The AppVault platform, logo, and original content are the intellectual property of AppVault. App
               names, logos, and descriptions remain the property of their respective owners.
             </p>
           </section>
@@ -61,7 +61,7 @@ export default function TermsPage() {
           <section>
             <h2 className="text-base font-semibold text-foreground mb-2">6. Disclaimer of Warranties</h2>
             <p>
-              WebsTore is provided &quot;as is&quot; without warranties of any kind. We do not warrant that the service
+              AppVault is provided &quot;as is&quot; without warranties of any kind. We do not warrant that the service
               will be uninterrupted, error-free, or that any particular app listed is safe or suitable for your use.
             </p>
           </section>
@@ -69,7 +69,7 @@ export default function TermsPage() {
           <section>
             <h2 className="text-base font-semibold text-foreground mb-2">7. Limitation of Liability</h2>
             <p>
-              To the maximum extent permitted by law, WebsTore shall not be liable for any indirect, incidental,
+              To the maximum extent permitted by law, AppVault shall not be liable for any indirect, incidental,
               special, or consequential damages arising from your use of the service.
             </p>
           </section>
@@ -86,8 +86,8 @@ export default function TermsPage() {
             <h2 className="text-base font-semibold text-foreground mb-2">9. Contact</h2>
             <p>
               For questions about these terms, please contact us at{' '}
-              <a href="mailto:hello@webstorehq.com" className="text-accent hover:underline">
-                hello@webstorehq.com
+              <a href="mailto:hello@appvault.com" className="text-accent hover:underline">
+                hello@appvault.com
               </a>
               .
             </p>

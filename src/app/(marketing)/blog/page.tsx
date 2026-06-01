@@ -1,10 +1,10 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { PenLine } from 'lucide-react'
 import { Container } from '@/components/layout/Container'
 
 export const metadata: Metadata = {
-  title: 'Blog — WebsTore',
-  description: 'Tips, guides, and curated lists from the WebsTore team.',
+  title: 'Blog — AppVault',
+  description: 'Tips, guides, and curated lists from the AppVault team.',
 }
 
 export default function BlogPage() {

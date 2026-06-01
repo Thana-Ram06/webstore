@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -25,7 +25,7 @@ export function DashboardSidebar() {
         <Link
           href="/"
           className="flex items-center gap-2 transition-opacity hover:opacity-80"
-          aria-label="WebsTore home"
+          aria-label="AppVault home"
         >
           <span className="flex h-6 w-6 items-center justify-center rounded-md bg-accent text-accent-foreground">
             <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden>
@@ -35,7 +35,7 @@ export function DashboardSidebar() {
               <rect x="8" y="8" width="5" height="5" rx="1.5" fill="currentColor" />
             </svg>
           </span>
-          <span className="text-sm font-semibold text-foreground">WebsTore</span>
+          <span className="text-sm font-semibold text-foreground">AppVault</span>
         </Link>
       </div>
 

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { getApps } from '@/lib/data/getApps'
 import { parseFilters } from '@/lib/data/browseUtils'
 import { getBrowseFacets } from '@/lib/data/getHomeData'
@@ -9,14 +9,14 @@ export const metadata: Metadata = {
   description:
     'Discover the best web apps across AI, productivity, developer tools, design, marketing, and more. Filter by pricing, platform, and category.',
   openGraph: {
-    title: 'Browse Web Apps — WebsTore',
+    title: 'Browse Web Apps — AppVault',
     description:
       'Discover the best web apps across AI, productivity, developer tools, design, and more.',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Browse Web Apps — WebsTore',
+    title: 'Browse Web Apps — AppVault',
     description: 'Discover the best web apps — filter by category, pricing, and platform.',
   },
 }

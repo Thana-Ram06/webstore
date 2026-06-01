@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useState, useEffect, useRef } from 'react'
 import { LogIn } from 'lucide-react'
@@ -13,7 +13,7 @@ import { Step5Success } from './steps/Step5Success'
 import { Button } from '@/components/ui/Button'
 import type { SubmitDraft, StepId } from '@/types/submit'
 
-const DRAFT_KEY = 'webstore_submit_draft'
+const DRAFT_KEY = 'AppVault_submit_draft'
 
 const INITIAL_DRAFT: SubmitDraft = {
   currentStep: 1,
@@ -129,7 +129,7 @@ export function SubmissionWizard() {
         </div>
         <h2 className="text-xl font-bold tracking-tight text-foreground">Sign in to submit</h2>
         <p className="mx-auto mt-2 max-w-xs text-sm text-muted-foreground">
-          You need an account to submit a web app to WebsTore.
+          You need an account to submit a web app to AppVault.
         </p>
         <div className="mt-6 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
           <Button href="/login" size="lg">

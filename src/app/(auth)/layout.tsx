@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import { ThemeToggle } from '@/components/ui/ThemeToggle'
 
 export default function AuthLayout({ children }: { children: React.ReactNode }) {
@@ -26,7 +26,7 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
           href="/"
           className="text-sm text-muted-foreground transition-colors hover:text-foreground"
         >
-          ← Back to WebsTore
+          ← Back to AppVault
         </Link>
         <ThemeToggle />
       </header>
@@ -42,7 +42,7 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
         <span aria-hidden>·</span>
         <Link href="/terms" className="hover:text-foreground transition-colors">Terms</Link>
         <span aria-hidden>·</span>
-        <span>© {new Date().getFullYear()} WebsTore</span>
+        <span>© {new Date().getFullYear()} AppVault</span>
       </footer>
     </div>
   )

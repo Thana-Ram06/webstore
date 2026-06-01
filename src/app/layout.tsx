@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { Inter, Instrument_Serif } from 'next/font/google'
 import { ThemeProvider } from '@/providers/ThemeProvider'
 import { AuthProvider } from '@/providers/AuthProvider'
@@ -21,11 +21,11 @@ const instrumentSerif = Instrument_Serif({
 
 export const metadata: Metadata = {
   title: {
-    default: 'WebsTore — Discover the Best Web Apps',
-    template: '%s — WebsTore',
+    default: 'AppVault — Discover the Best Web Apps',
+    template: '%s — AppVault',
   },
   description:
-    'WebsTore is the curated directory for modern web apps. Discover SaaS tools, developer utilities, AI tools, and productivity software — reviewed by developers and makers.',
+    'Discover, save, and submit the best web applications. Explore AI tools, productivity apps, developer tools, design platforms, and more.',
   keywords: [
     'web apps',
     'saas directory',
@@ -37,22 +37,22 @@ export const metadata: Metadata = {
     'online tools',
     'saas tools',
   ],
-  authors: [{ name: 'WebsTore' }],
-  creator: 'WebsTore',
+  authors: [{ name: 'AppVault' }],
+  creator: 'AppVault',
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000'),
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    siteName: 'WebsTore',
-    title: 'WebsTore — Discover the Best Web Apps',
+    siteName: 'AppVault',
+    title: 'AppVault — Discover the Best Web Apps',
     description:
-      'The curated directory for modern web apps. Discover SaaS tools, developer utilities, and productivity software.',
+      'Discover, save, and submit the best web applications. Explore AI tools, productivity apps, developer tools, design platforms, and more.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'WebsTore — Discover the Best Web Apps',
+    title: 'AppVault — Discover the Best Web Apps',
     description:
-      'The curated directory for modern web apps. Discover SaaS tools, developer utilities, and productivity software.',
+      'Discover, save, and submit the best web applications. Explore AI tools, productivity apps, developer tools, design platforms, and more.',
   },
   robots: {
     index: true,

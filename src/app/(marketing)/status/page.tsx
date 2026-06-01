@@ -1,14 +1,14 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { CheckCircle2 } from 'lucide-react'
 import { Container } from '@/components/layout/Container'
 
 export const metadata: Metadata = {
-  title: 'System Status — WebsTore',
-  description: 'Current operational status of all WebsTore services.',
+  title: 'System Status — AppVault',
+  description: 'Current operational status of all AppVault services.',
 }
 
 const SERVICES = [
-  { name: 'Web Application', description: 'webstorehq.com' },
+  { name: 'Web Application', description: 'appvault.com' },
   { name: 'Authentication', description: 'Google Sign-In & session management' },
   { name: 'Database', description: 'Firestore — read & write' },
   { name: 'File Storage', description: 'Logos, screenshots, avatars' },
@@ -51,8 +51,8 @@ export default function StatusPage() {
 
         <p className="mt-8 text-sm text-muted-foreground">
           Experiencing an issue? Contact us at{' '}
-          <a href="mailto:hello@webstorehq.com" className="text-accent hover:underline">
-            hello@webstorehq.com
+          <a href="mailto:hello@appvault.com" className="text-accent hover:underline">
+            hello@appvault.com
           </a>
           .
         </p>

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import {
   Sparkles, Zap, Code2, Palette, Megaphone,
@@ -11,8 +11,8 @@ import { CATEGORIES } from '@/lib/constants/categories'
 import { cn } from '@/lib/utils/cn'
 
 export const metadata: Metadata = {
-  title: 'Browse by Category — WebsTore',
-  description: 'Explore all categories of web apps on WebsTore — AI tools, developer utilities, design software, productivity apps, and more.',
+  title: 'Browse by Category — AppVault',
+  description: 'Explore all categories of web apps on AppVault — AI tools, developer utilities, design software, productivity apps, and more.',
 }
 
 const ICON_MAP: Record<string, LucideIcon> = {

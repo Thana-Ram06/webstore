@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -35,7 +35,7 @@ export function AdminSidebar() {
           </svg>
         </span>
         <div className="min-w-0">
-          <span className="text-sm font-semibold text-foreground">WebsTore</span>
+          <span className="text-sm font-semibold text-foreground">AppVault</span>
           <div className="flex items-center gap-1">
             <ShieldCheck className="h-2.5 w-2.5 text-accent" aria-hidden />
             <span className="text-[10px] font-semibold uppercase tracking-wider text-accent">

@@ -1,9 +1,9 @@
-export const APP_CONFIG = {
-  name: 'WebsTore',
+﻿export const APP_CONFIG = {
+  name: 'AppVault',
   tagline: 'The Home of Modern Web Apps',
   description:
-    'Discover, review, and save the best web apps — curated by developers and makers.',
-  url: process.env.NEXT_PUBLIC_APP_URL ?? 'https://webstorehq.com',
+    'Discover, save, and submit the best web applications. Explore AI tools, productivity apps, developer tools, design platforms, and more.',
+  url: process.env.NEXT_PUBLIC_APP_URL ?? 'https://appvault.com',
 
   /** Submission constraints */
   maxScreenshots: 8,
@@ -24,7 +24,7 @@ export const APP_CONFIG = {
 
   /**
    * Platform options for web apps only.
-   * Intentionally excludes iOS/Android — WebsTore lists web apps, not native mobile apps.
+   * Intentionally excludes iOS/Android — AppVault lists web apps, not native mobile apps.
    */
   platforms: ['web', 'pwa', 'desktop', 'extension'] as const,
   platformLabels: {

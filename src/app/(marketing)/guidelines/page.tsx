@@ -1,9 +1,9 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { Container } from '@/components/layout/Container'
 
 export const metadata: Metadata = {
-  title: 'Submission Guidelines — WebsTore',
-  description: 'Guidelines for submitting a web app to WebsTore.',
+  title: 'Submission Guidelines — AppVault',
+  description: 'Guidelines for submitting a web app to AppVault.',
 }
 
 export default function GuidelinesPage() {
@@ -12,7 +12,7 @@ export default function GuidelinesPage() {
       <div className="mx-auto max-w-2xl">
         <h1 className="mb-2 text-2xl font-bold tracking-tight text-foreground">Submission Guidelines</h1>
         <p className="mb-8 text-sm text-muted-foreground">
-          Read these guidelines before submitting your web app to WebsTore.
+          Read these guidelines before submitting your web app to AppVault.
         </p>
 
         <div className="prose prose-sm dark:prose-invert max-w-none space-y-6 text-sm text-foreground/80 leading-relaxed">
@@ -44,7 +44,7 @@ export default function GuidelinesPage() {
             <h2 className="mb-2 text-base font-semibold text-foreground">4. Content Standards</h2>
             <p>
               We do not accept apps that promote illegal activity, contain adult-only content, spread
-              misinformation, or exist solely for spam or phishing. WebsTore reserves the right to reject or
+              misinformation, or exist solely for spam or phishing. AppVault reserves the right to reject or
               remove any app at our discretion.
             </p>
           </section>
@@ -61,7 +61,7 @@ export default function GuidelinesPage() {
           <section>
             <h2 className="mb-2 text-base font-semibold text-foreground">6. Review Process</h2>
             <p>
-              All submissions are reviewed by the WebsTore team before going live. We typically review
+              All submissions are reviewed by the AppVault team before going live. We typically review
               submissions within 2–3 business days. You will be notified by email of the outcome.
             </p>
           </section>
@@ -78,8 +78,8 @@ export default function GuidelinesPage() {
             <h2 className="mb-2 text-base font-semibold text-foreground">8. Questions</h2>
             <p>
               If you have questions about the submission process, contact us at{' '}
-              <a href="mailto:hello@webstorehq.com" className="text-accent hover:underline">
-                hello@webstorehq.com
+              <a href="mailto:hello@appvault.com" className="text-accent hover:underline">
+                hello@appvault.com
               </a>
               .
             </p>

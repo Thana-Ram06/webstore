@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { Package, CheckCircle2, Clock, XCircle, Heart } from 'lucide-react'
 import { StatsCard } from '@/components/dashboard/StatsCard'
@@ -28,7 +28,7 @@ export default function DashboardPage() {
           {firstName ? `Welcome back, ${firstName}` : 'Welcome back'}
         </h2>
         <p className="mt-0.5 text-sm text-muted-foreground">
-          Here&apos;s an overview of your activity on WebsTore.
+          Here&apos;s an overview of your activity on AppVault.
         </p>
       </div>
 
@@ -89,7 +89,7 @@ export default function DashboardPage() {
           <EmptyDashboardState
             icon={Package}
             title="No submissions yet"
-            description="Submit your first web app and start building your presence on WebsTore."
+            description="Submit your first web app and start building your presence on AppVault."
             action={{ label: 'Submit Your App', href: '/submit' }}
           />
         )}

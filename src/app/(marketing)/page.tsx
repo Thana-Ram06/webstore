@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { HeroSection } from '@/components/home/HeroSection'
 import { FeaturedAppsSection } from '@/components/home/FeaturedAppsSection'
 import { TrendingSection } from '@/components/home/TrendingSection'
@@ -15,20 +15,20 @@ import {
 } from '@/lib/data/getHomeData'
 
 export const metadata: Metadata = {
-  title: 'WebsTore — The Home of Modern Web Apps',
+  title: 'AppVault — Discover the Best Web Apps',
   description:
-    'Discover, review, and save the best web apps — AI tools, developer utilities, design software, and no-code platforms. Curated by developers and makers.',
+    'Discover, save, and submit the best web applications. Explore AI tools, productivity apps, developer tools, design platforms, and more.',
   openGraph: {
-    title: 'WebsTore — The Home of Modern Web Apps',
+    title: 'AppVault — Discover the Best Web Apps',
     description:
-      'Discover, review, and save the best web apps — curated by developers and makers.',
+      'Discover, save, and submit the best web applications. Explore AI tools, productivity apps, developer tools, design platforms, and more.',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'WebsTore — The Home of Modern Web Apps',
+    title: 'AppVault — Discover the Best Web Apps',
     description:
-      'Discover, review, and save the best web apps — curated by developers and makers.',
+      'Discover, save, and submit the best web applications. Explore AI tools, productivity apps, developer tools, design platforms, and more.',
   },
 }
 

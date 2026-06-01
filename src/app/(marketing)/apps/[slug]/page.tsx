@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { Container } from '@/components/layout/Container'
 import { AppHero } from '@/components/app-detail/AppHero'
@@ -22,16 +22,16 @@ export async function generateMetadata({
   const description = app.description.slice(0, 160).replace(/\n/g, ' ')
 
   return {
-    title: `${app.name} — WebsTore`,
+    title: `${app.name} — AppVault`,
     description,
     openGraph: {
-      title: `${app.name} on WebsTore`,
+      title: `${app.name} on AppVault`,
       description: app.tagline,
       type: 'website',
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${app.name} on WebsTore`,
+      title: `${app.name} on AppVault`,
       description: app.tagline,
     },
   }

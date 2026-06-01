@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import { cn } from '@/lib/utils/cn'
 
 interface AuthCardProps {
@@ -16,7 +16,7 @@ export function AuthCard({ title, subtitle, children, footer, className }: AuthC
       <div className="mb-8 flex flex-col items-center gap-3">
         <Link
           href="/"
-          aria-label="WebsTore — Home"
+          aria-label="AppVault — Home"
           className="flex h-10 w-10 items-center justify-center rounded-xl bg-accent text-accent-foreground transition-opacity hover:opacity-90"
         >
           <svg width="18" height="18" viewBox="0 0 14 14" fill="none" aria-hidden>

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { Suspense } from 'react'
 import { AuthCard } from '@/components/auth/AuthCard'
 import { LoginForm } from '@/components/auth/LoginForm'
@@ -6,14 +6,14 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Sign In',
-  description: 'Sign in to your WebsTore account to discover and save your favourite web apps.',
+  description: 'Sign in to your AppVault account to discover and save your favourite web apps.',
 }
 
 export default function LoginPage() {
   return (
     <AuthCard
       title="Welcome back"
-      subtitle="Sign in to continue to WebsTore"
+      subtitle="Sign in to continue to AppVault"
       footer={
         <>
           Don&apos;t have an account?{' '}

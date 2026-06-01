@@ -1,9 +1,9 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { Container } from '@/components/layout/Container'
 
 export const metadata: Metadata = {
   title: 'Cookie Policy',
-  description: 'Cookie Policy for WebsTore.',
+  description: 'Cookie Policy for AppVault.',
   robots: { index: false },
 }
 
@@ -36,7 +36,7 @@ export default function CookiesPage() {
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="px-4 py-3 font-mono text-foreground">__webstorehq_session</td>
+                    <td className="px-4 py-3 font-mono text-foreground">__appvault_session</td>
                     <td className="px-4 py-3 text-muted-foreground">Keeps you signed in between visits</td>
                     <td className="px-4 py-3 text-muted-foreground">7 days</td>
                   </tr>
@@ -48,7 +48,7 @@ export default function CookiesPage() {
           <section>
             <h2 className="mb-2 text-base font-semibold text-foreground">Essential Cookies Only</h2>
             <p>
-              WebsTore uses only one cookie — the session cookie listed above. It is strictly necessary for
+              AppVault uses only one cookie — the session cookie listed above. It is strictly necessary for
               authentication to function. We do not use advertising, tracking, or analytics cookies.
             </p>
           </section>
@@ -74,7 +74,7 @@ export default function CookiesPage() {
             <h2 className="mb-2 text-base font-semibold text-foreground">Managing Cookies</h2>
             <p>
               You can delete or block cookies through your browser settings. Note that disabling the session
-              cookie will prevent you from staying signed in to WebsTore.
+              cookie will prevent you from staying signed in to AppVault.
             </p>
           </section>
 
@@ -82,8 +82,8 @@ export default function CookiesPage() {
             <h2 className="mb-2 text-base font-semibold text-foreground">Contact</h2>
             <p>
               Questions about our cookie use? Contact us at{' '}
-              <a href="mailto:hello@webstorehq.com" className="text-accent hover:underline">
-                hello@webstorehq.com
+              <a href="mailto:hello@appvault.com" className="text-accent hover:underline">
+                hello@appvault.com
               </a>
               .
             </p>

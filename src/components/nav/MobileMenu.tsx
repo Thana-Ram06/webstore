@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useEffect } from 'react'
 import Link from 'next/link'
@@ -77,7 +77,7 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
             href="/"
             onClick={onClose}
             className="flex items-center gap-2"
-            aria-label="WebsTore home"
+            aria-label="AppVault home"
           >
             <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-accent text-accent-foreground">
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden>
@@ -87,7 +87,7 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
                 <rect x="8" y="8" width="5" height="5" rx="1.5" fill="currentColor" />
               </svg>
             </span>
-            <span className="text-sm font-semibold text-foreground">WebsTore</span>
+            <span className="text-sm font-semibold text-foreground">AppVault</span>
           </Link>
           <button
             type="button"

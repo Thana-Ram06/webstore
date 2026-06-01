@@ -1,7 +1,7 @@
-import { SignJWT, jwtVerify, type JWTPayload } from 'jose'
+﻿import { SignJWT, jwtVerify, type JWTPayload } from 'jose'
 import type { UserRole } from '@/types'
 
-export const SESSION_COOKIE = '__webstorehq_session'
+export const SESSION_COOKIE = '__appvault_session'
 export const SESSION_DURATION_SECONDS = 60 * 60 * 24 * 7 // 7 days
 
 export interface SessionPayload extends JWTPayload {

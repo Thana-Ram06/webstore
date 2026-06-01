@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { Suspense } from 'react'
 import { AuthCard } from '@/components/auth/AuthCard'
 import { LoginForm } from '@/components/auth/LoginForm'
@@ -6,13 +6,13 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Create Account',
-  description: 'Create a free WebsTore account to discover, save, and review the best web apps.',
+  description: 'Create a free AppVault account to discover, save, and review the best web apps.',
 }
 
 export default function SignupPage() {
   return (
     <AuthCard
-      title="Join WebsTore"
+      title="Join AppVault"
       subtitle="The Home of Modern Web Apps"
       footer={
         <>

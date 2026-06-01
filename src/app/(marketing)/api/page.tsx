@@ -1,10 +1,10 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { Code2 } from 'lucide-react'
 import { Container } from '@/components/layout/Container'
 
 export const metadata: Metadata = {
-  title: 'Developer API — WebsTore',
-  description: 'WebsTore developer API — access app data, categories, and search programmatically.',
+  title: 'Developer API — AppVault',
+  description: 'AppVault developer API — access app data, categories, and search programmatically.',
 }
 
 export default function ApiPage() {
@@ -18,11 +18,11 @@ export default function ApiPage() {
         </div>
         <h1 className="text-3xl font-bold tracking-tight text-foreground">Developer API</h1>
         <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-          Programmatic access to WebsTore app data, categories, ratings, and search — coming soon.
+          Programmatic access to AppVault app data, categories, ratings, and search — coming soon.
         </p>
         <p className="mt-3 text-sm text-muted-foreground">
           Interested in early access?{' '}
-          <a href="mailto:hello@webstorehq.com" className="text-accent hover:underline">
+          <a href="mailto:hello@appvault.com" className="text-accent hover:underline">
             Get in touch.
           </a>
         </p>

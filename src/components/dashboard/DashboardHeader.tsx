@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -31,7 +31,7 @@ export function DashboardHeader() {
       </Link>
 
       {/* Brand mark — mobile only */}
-      <Link href="/" className="lg:hidden" aria-label="WebsTore home">
+      <Link href="/" className="lg:hidden" aria-label="AppVault home">
         <span className="flex h-6 w-6 items-center justify-center rounded-md bg-accent text-accent-foreground">
           <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden>
             <rect x="1" y="1" width="5" height="5" rx="1.5" fill="currentColor" />

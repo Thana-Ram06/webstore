@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import { Container } from '@/components/layout/Container'
 import { ThemeToggle } from '@/components/ui/ThemeToggle'
 
@@ -12,7 +12,7 @@ const COLUMNS = [
       { label: 'Browse Web Apps', href: '/apps' },
       { label: 'Submit a Web App', href: '/submit' },
       { label: 'Changelog', href: '/changelog' },
-      { label: 'About WebsTore', href: '/about' },
+      { label: 'About AppVault', href: '/about' },
     ],
   },
   {
@@ -91,7 +91,7 @@ export function Footer() {
 
             {/* Brand — spans 2 of 6 cols */}
             <div className="col-span-2 md:col-span-2">
-              <Link href="/" className="inline-flex items-center gap-2" aria-label="WebsTore home">
+              <Link href="/" className="inline-flex items-center gap-2" aria-label="AppVault home">
                 <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-accent text-accent-foreground">
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden>
                     <rect x="1" y="1" width="5" height="5" rx="1.5" fill="currentColor" />
@@ -100,7 +100,7 @@ export function Footer() {
                     <rect x="8" y="8" width="5" height="5" rx="1.5" fill="currentColor" />
                   </svg>
                 </span>
-                <span className="text-sm font-semibold text-foreground">WebsTore</span>
+                <span className="text-sm font-semibold text-foreground">AppVault</span>
               </Link>
               <p className="mt-3.5 max-w-[220px] text-sm leading-relaxed text-muted-foreground">
                 The Home of Modern Web Apps. Discover, save, and review the best web tools.
@@ -132,7 +132,7 @@ export function Footer() {
           {/* Bottom bar */}
           <div className="mt-12 flex flex-col-reverse items-center justify-between gap-4 border-t border-border pt-8 sm:flex-row">
             <p className="text-xs text-muted-foreground">
-              © {new Date().getFullYear()} WebsTore. All rights reserved.
+              © {new Date().getFullYear()} AppVault. All rights reserved.
             </p>
             <div className="flex items-center gap-4">
               <p className="text-xs text-muted-foreground">The Home of Modern Web Apps</p>

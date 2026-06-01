@@ -1,4 +1,4 @@
-import type { MetadataRoute } from 'next'
+﻿import type { MetadataRoute } from 'next'
 import { getAdminDb } from '@/lib/firebase/admin'
 
 const STATIC_ROUTES = [
@@ -8,7 +8,7 @@ const STATIC_ROUTES = [
 ]
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = process.env.NEXT_PUBLIC_APP_URL ?? 'https://webstorehq.com'
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL ?? 'https://appvault.com'
   const now = new Date()
 
   const staticEntries: MetadataRoute.Sitemap = STATIC_ROUTES.map(({ path, priority, changeFreq }) => ({

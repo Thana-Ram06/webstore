@@ -1,5 +1,5 @@
-/**
- * WebsTore E2E Verification Script
+﻿/**
+ * AppVault E2E Verification Script
  * Tests all 10 launch-critical flows using real Firebase credentials.
  *
  * Strategy:
@@ -151,8 +151,8 @@ function fail(id, label, detail = '') { results.push({ id, label, status: 'FAIL'
 // ─── Test data ────────────────────────────────────────────────────────────────
 const testUserId = 'e2e-test-user-001'
 const testAdminId = 'e2e-test-admin-001'
-const testUserEmail = 'e2e-user@webstorehq-test.invalid'
-const testAdminEmail = 'e2e-admin@webstorehq-test.invalid'
+const testUserEmail = 'e2e-user@AppVaulthq-test.invalid'
+const testAdminEmail = 'e2e-admin@AppVaulthq-test.invalid'
 let testAppId = null       // pending — for moderation tests (7/8/9)
 let testFeaturedAppId = null // approved+featured — for favorites (5) and visibility (10)
 
@@ -688,7 +688,7 @@ async function run() {
 
   // ─── Final report ────────────────────────────────────────────────────────────
   console.log('\n' + '═'.repeat(70))
-  console.log('  WEBSTOREHQ — LAUNCH VERIFICATION REPORT')
+  console.log('  AppVaultHQ — LAUNCH VERIFICATION REPORT')
   console.log('═'.repeat(70))
 
   const bySection = (n) => results.filter((r) => r.id.match(new RegExp(`^${n}[a-z0-9]`)))

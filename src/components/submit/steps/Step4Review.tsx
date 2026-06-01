@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useState } from 'react'
 import { AlertCircle } from 'lucide-react'
@@ -46,7 +46,7 @@ export function Step4Review({ draft, onBack, onSubmit, isSubmitting, submitError
             rel="noopener noreferrer"
             className="text-accent hover:underline"
           >
-            WebsTore submission guidelines
+            AppVault submission guidelines
           </a>
           . I have the right to submit this app.
         </span>

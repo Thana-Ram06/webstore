@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useState, useEffect, useCallback } from 'react'
 import Link from 'next/link'
@@ -149,7 +149,7 @@ function Brand() {
     <Link
       href="/"
       className="flex shrink-0 items-center gap-2 transition-opacity hover:opacity-85"
-      aria-label="WebsTore — The Home of Modern Web Apps"
+      aria-label="AppVault — The Home of Modern Web Apps"
     >
       <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-accent text-accent-foreground">
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden>
@@ -159,7 +159,7 @@ function Brand() {
           <rect x="8" y="8" width="5" height="5" rx="1.5" fill="currentColor" />
         </svg>
       </span>
-      <span className="text-sm font-semibold tracking-tight text-foreground">WebsTore</span>
+      <span className="text-sm font-semibold tracking-tight text-foreground">AppVault</span>
     </Link>
   )
 }
