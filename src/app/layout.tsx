@@ -47,12 +47,18 @@ export const metadata: Metadata = {
     title: 'AppVault — Discover the Best Web Apps',
     description:
       'Discover, save, and submit the best web applications. Explore AI tools, productivity apps, developer tools, design platforms, and more.',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'AppVault' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'AppVault — Discover the Best Web Apps',
     description:
       'Discover, save, and submit the best web applications. Explore AI tools, productivity apps, developer tools, design platforms, and more.',
+    images: ['/og-image.png'],
+  },
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-icon.png',
   },
   robots: {
     index: true,
